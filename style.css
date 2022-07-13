@@ -1,15 +1,129 @@
-body {
-	background-color: #363636;
-	color: #e5e5e5;
+/* Custom properties/variables  */
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #e5e5e5;
+  /* #303841;*/
+  --main-black: #363636;
+} 
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  /*font-size: 62.5%;*/
+  scroll-behavior: smooth;
+}
+
+
+ @media (max-height: 800px){
+    p {
+      font-size: 20px;
+    }
+  }
+ 
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ }
+
+ li {
+  display: inline;
+ }
+ 
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  background-color: gray;
+}
+  
+ body {
+	background-color: var(--main-black);
+	color: var(--main-gray);
 	text-align: center;
 }
-h1{
-	background-color: #363636;
-	color: #ffffff;
+h1,
+h2 {
+	background-color: var(--main-black);
+	color: var(--main-white);
 	text-align: center;
+	font-family: 'American Typewriter', sans-serif;
+	font-weight: 700;
+	font-size: 6rem;
 }
 p {
-	background-color: #363636;
-	color: #e5e5e5;
+	background-color: var(--main-black);
+	color: var(--main-gray);
 	text-align: center;
+	font-family: 'Inter', sans-serif;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--main-gray);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  padding: 1em;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 4rem; /*qué tan lejos del margen derecho*/
+}
+
+/* Projects section */
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  gap: 50px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  padding: 10px;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
 }
