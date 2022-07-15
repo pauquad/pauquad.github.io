@@ -380,8 +380,14 @@ footer {
 	display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-	position: absolute;
-	bottom: 0;
+
 	background-color: var(--main-black);
 	background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
