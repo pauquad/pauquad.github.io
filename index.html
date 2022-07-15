@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
-	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-	<link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    	<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Inter&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+		
+		<script src="https://kit.fontawesome.com/3d8011cf10.js" crossorigin="anonymous"></script>
+		
+	<title>Paula Quadrelli</title>
+
 </head>
+
 <body>
   <header id="header">
     <nav id="navbar" class="nav">
@@ -23,12 +33,11 @@
 		
   </header>
 
+<!-- Welcome section -->
 
 <section id="welcome-section" class="welcome-section">
 	<h1 id="welcome-section">Welcome!</h1>
-	<a href="https://pauquad.github.io">
-		<p>Profile</p>
-	</a>
+	
 	<details>
 		<summary>
 			About
@@ -37,6 +46,7 @@
 		
 		</p>
 	</details>
+	
 </section>
 
 <hr>
@@ -79,24 +89,35 @@
 </div>
 </section>
 
-<section>
-  <h3 id="contact">Contact</h3>
-  
-  <form action=”mailto:paulaquadrelli@gmail” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>Name:<br>
-	<input type=”text” size=”25″ name=”ContactName”>
-	<br>E-mail:<br>
-	<input type="text" size="25" name="ContactMail">
-	<br>Message:<br> 
-	<textarea name=”ContactCommentt” rows="6" cols="20">
-	</textarea>
-	<br> 
-	<button class="button" type=”submit” value=”Submit” autofocus="autofocus">Submit</button>
-  </form>
+<hr>
+<!--Contact Section -->
+
+<section id="contact" class="contact-section">
+    <div class="contact-section-header">
+        <h2>Contact</h2>
+        <p></p>
+    </div>
+	
+	<div class="container">
+		<form action=”https://formspree.io/f/mayvgrrb” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+		<label for="full-name">Name</label>
+		<input type=”text” size=”25″ name=”ContactName” placeholder:"Name" required:"">
+		<br>
+		<label for="email-address">E-mail</label>
+		<input type="text" size="25" name="ContactMail" placeholder:"Email" required:"">
+		<br>
+		<label for="message">Message</label>
+		<textarea name=”ContactCommentt” rows="6" cols="20" required:""></textarea>
+		<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+	 
+		<button class="button" type=”submit” value=”Submit”>Submit</button>
+	
+	    </form>
+    </div>
 </section>
 
 <hr>
 
-<section>  
   <div class="contact-links">
        <!-- <a
           href="https://facebook.com/"
@@ -105,6 +126,9 @@
           ><i class="fab fa-facebook-square"></i> Facebook</a
         >
 		-->
+		<a href="https://www.linkedin.com/in/paula-quadrelli/" target="_blank" class="btn contact-details">
+		<i class="fab fa-linkedin"></i> LinkedIn
+		</a>
         <a
           id="profile-link"
           href="https://github.com/pauquad"
@@ -112,18 +136,18 @@
           class="btn contact-details"
           ><i class="fab fa-github"></i> GitHub</a
         >
+		<a href="https://soundcloud.com/pauquad" target="_blank" class="btn contact-details"> 
+		<i class="fa-brands fa-soundcloud"></i> Soundcloud
+		</a>
+		
         <a
           href="https://twitter.com/paulaquadrelli"
           target="_blank"
           class="btn contact-details"
           ><i class="fab fa-twitter"></i> Twitter</a
         >
-<!--        <a href= "mailto: paulaquadrelli@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> E-mail</a
-        >
-        -->        
+     
       </div>
-
-<!-- <a id="profile-link" href="https://github.com/pauquad" target="_blank">GitHub</a> -->
 
 </section>
 
