@@ -131,7 +131,7 @@ hr {
 
 h1,
 h2 {
-	background-color: var(--main-black);
+	background-color: transparent;
 	color: var(--main-white);
 	text-align: center;
 	font-family: 'Merriweather', serif;
