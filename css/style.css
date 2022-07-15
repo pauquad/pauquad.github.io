@@ -195,7 +195,7 @@ a {
 
 /*Welcome section*/
 
-.welcome-section {
+.welcome-section, .blog-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
