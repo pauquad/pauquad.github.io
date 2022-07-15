@@ -161,8 +161,9 @@ a {
   top: 0;
   left: 0;
   background-color: var(--main-gray);
-  color: white;
+  color: gray;
   font-family: 'Inter', sans-serif;
+  font-weight: bold;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -229,7 +230,7 @@ details {
 /* "Automagic" image grid using no media queries */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1px;
   gap: 50px;
   width: 100%;
@@ -284,17 +285,17 @@ details {
 }
 
 .contact-links {
-  display: flex;
+  display: flex; 
   justify-content: center;
   width: 100%;
   max-width: 980px;
   margin-top: 2rem;
-  padding: 20px;
+  padding: 10x;
   flex-wrap: wrap;
 }
 
 .contact-details {
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
   box-sizing: border-box;
@@ -307,16 +308,27 @@ details {
 }
 
 .fa-linkedin {
-	color: blue;
+	color: #0A66C2;
 }
 .fa-github {
 	color: var(--main-gray);
 }
 .fa-soundcloud {
-	color: orange;
+	background: linear-gradient(120deg, #ff8800, #ff3300);
+
 }
-.fab fa-twitter {
-	color: light-blue;
+.fa-twitter {
+	color: #1DA1F2;
+}
+.fa-youtube {
+	color: #FF0000;
+}
+.fa-itch-io {
+	color: #fa5c5c
+}
+
+.one {
+	color: green;
 }
 
 .container {
@@ -358,4 +370,3 @@ textarea {
   color: white;
   border: white;
 }
-
