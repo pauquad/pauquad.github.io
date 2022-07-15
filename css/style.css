@@ -370,3 +370,8 @@ textarea {
   color: white;
   border: white;
 }
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
