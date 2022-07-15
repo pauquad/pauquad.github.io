@@ -377,6 +377,9 @@ textarea {
 }
 
 footer {
+	display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
 	position: absolute;
 	bottom: 0;
 	background-color: var(--main-black);
