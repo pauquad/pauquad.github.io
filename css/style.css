@@ -132,6 +132,13 @@ hr {
 	line-height: 1.4;
 }
 
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
 h1,
 h2 {
 	background-color: transparent;
@@ -199,7 +206,7 @@ a {
 
 /*Welcome section*/
 
-.welcome-section, .blog-header {
+.welcome-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,6 +238,7 @@ details {
   padding: 10rem 2rem;
   background-color: var(--main-black);
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  width: 100%;
 }
 
 /* "Automagic" image grid using no media queries */
@@ -248,6 +256,7 @@ details {
 .project-title {
 	background: transparent;
 }
+
 
 @media (max-width: 30.625em) {
   .projects-section {
@@ -294,9 +303,7 @@ details {
   display: flex; 
   justify-content: center;
   width: 100%;
-/*  max-width: 980px; */
   margin-top: 2rem;
-  padding: 10x;
   flex-wrap: wrap;
 }
 
@@ -392,4 +399,23 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+}
+
+@media screen and (max-width: 800px) {
+	.projects-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.iframe, .a {
+		width: 50%;
+		height: auto;
+	}
+}
+@media screen and (max-width: 400px) {
+	.container {
+		width: 100%;
+	}
+	.img {
+		width: 100%;
+		height: auto;
+	}
 }
